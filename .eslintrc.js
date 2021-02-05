@@ -41,21 +41,6 @@ module.exports = {
                 },
                 pathGroups: [
                     {
-                        pattern: '@api/*',
-                        group: 'internal',
-                        position: 'after',
-                    },
-                    {
-                        pattern: '@prisma-client',
-                        group: 'internal',
-                        position: 'before',
-                    },
-                    {
-                        pattern: '@orm/*',
-                        group: 'internal',
-                        position: 'before',
-                    },
-                    {
                         pattern: '@strategies/*',
                         group: 'internal',
                         position: 'after',
@@ -72,6 +57,11 @@ module.exports = {
                     },
                     {
                         pattern: '@interceptors/*',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                    {
+                        pattern: '@validators/*',
                         group: 'internal',
                         position: 'after',
                     },
